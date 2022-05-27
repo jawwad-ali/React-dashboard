@@ -10,7 +10,7 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
 function App() {
-  const { activeMenu } = useStateContext() //1.12.13 
+  const { activeMenu } = useStateContext() 
 
   return (
     <div>
@@ -78,3 +78,4 @@ function App() {
 
 export default App;
 // 2.17.03
+// 2.35.54
