@@ -25,7 +25,7 @@ const Sidebar = () => {
 
   return (
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
-      {activeMenu && (
+      {activeMenu && ( 
         <>
           <div className="flex justify-between items-center">
             <Link
@@ -33,12 +33,12 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white 
               text-slate-900"
-            > 
+            >
               <SiShopware /> <span>Shoopy</span>
-            </Link> 
+            </Link>
 
             <TooltipComponent content="Close" position="BottomCenter">
-              <button 
+              <button
                 onClick={() =>
                   setActiveMenu((prevActiveMenu) => !prevActiveMenu)
                 }
@@ -49,16 +49,16 @@ const Sidebar = () => {
             </TooltipComponent>
           </div>
 
-          {/* Dashboard Content */}
-          <div className="mt-10">
+          {/* Dashboard Content */} 
+          <div className="mt-10 ">
             {links.map((item) => (
               <div key={item.title}>
                 <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase">
                   {item.title}
                 </p>
                 {item.links.map((link) => (
-                  <NavLink
-                    to={`/${link.name}`}
+                  <NavLink 
+                    to={`/${link.name}`} 
                     key={link.name}
                     onClick={handleCloseSideBar}
                     className={({ isActive }) =>

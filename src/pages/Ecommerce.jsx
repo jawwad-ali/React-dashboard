@@ -25,9 +25,9 @@ const Ecommerce = () => {
         <div
           className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80
           pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"
-        >
+        > 
           <div className="flex justify-between items-center">
-            <div>
+            <div> 
               <p className="font-bold text-gray-400">Earnings</p>
               <p className="text-2xl">#63,488.78</p>
             </div>
@@ -114,14 +114,14 @@ const Ecommerce = () => {
 
               <div className="mt-5">
                 <SparkLine
-                  currentColor="blue"
+                  currentColor="blue" 
                   id="line-sparkLine"
                   type="Line"
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color="blue"
-                />
+                  color="blue" 
+                /> 
                 <div className="mt-10">
                   <Button
                     text="Download Report"
@@ -130,11 +130,11 @@ const Ecommerce = () => {
                     borderRadius="10px"
                   />
                 </div>
-              </div>
+              </div> 
             </div>
 
             <div className="mt-5">
-              <Stacked width="320px" height="360px" />
+              <Stacked width="320px" height="360px" /> 
             </div>
           </div>
         </div>
@@ -144,4 +144,3 @@ const Ecommerce = () => {
 };
 
 export default Ecommerce;
-// Start from 2.07.25

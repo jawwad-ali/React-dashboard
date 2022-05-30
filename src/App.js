@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { FiSettings } from "react-icons/fi"
 import { TooltipComponent } from "@syncfusion/ej2-react-popups"
 import "./App.css"
@@ -10,7 +10,7 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
 function App() {
-  const { activeMenu } = useStateContext() 
+  const { activeMenu } = useStateContext()
 
   return (
     <div>
@@ -37,14 +37,16 @@ function App() {
           {/* Navbar */}
           <div className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
             <div className="fixed md:static bg-main-bg  dark:bg-main-dark-bg navbar w-full">
-              <Navbar />
+              <Navbar /> 
             </div>
- 
+
             <div>
+              <ThemeSettings />
+
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/" element={<Ecommerce />} />
+                <Route path="/ecommerce" element={<Ecommerce />} />
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
@@ -77,5 +79,4 @@ function App() {
 }
 
 export default App;
-// 2.17.03
-// 2.35.54
+// 3.02.32 
