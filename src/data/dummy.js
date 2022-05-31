@@ -787,7 +787,7 @@ export const medicalproBranding = {
 
 export const themeColors = [
   {
-    name: 'blue-theme',
+    name: 'blue-theme', 
     color: '#1A97F5',
   },
   {
