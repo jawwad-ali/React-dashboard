@@ -12,10 +12,9 @@ import {
 
 import {
   stackedCustomSeries,
-  stackedPrimaryXAxis,
+  stackedPrimaryXAxis, 
   stackedPrimaryYAxis,
 } from "../../data/dummy";
-import { useStateContext } from "../../context/ContextProvider";
 
 const Stacked = ({ width, height }) => {
   return (
